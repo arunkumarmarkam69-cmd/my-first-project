@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #4f46e5;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #111827;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #f3f4f6;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>A clean starter website using HTML, CSS, and JavaScript</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="container">
+    <h2>Home</h2>
+    <p>This is a simple, responsive website layout you can customize.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Lightweight and quick to load.</p>
+        <button onclick="alert('Fast!')">Click me</button>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Looks good on mobile and desktop.</p>
+        <button onclick="alert('Responsive!')">Click me</button>
+      </div>
+      <div class="card">
+        <h3>Customizable</h3>
+        <p>Edit colors, text, and layout easily.</p>
+        <button onclick="alert('Customizable!')">Click me</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About</h2>
+    <p>This site is built with plain HTML, CSS, and a bit of JavaScript—no frameworks needed.</p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
